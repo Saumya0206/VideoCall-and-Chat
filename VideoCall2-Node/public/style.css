@@ -112,3 +112,7 @@ video{
      color: white;
      list-style: none;
  }
+
+ .unmute, .stop{
+     color: rgb(212, 23, 23);
+ }
