@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
+
 }
 
 #video-grid{
@@ -83,7 +85,14 @@ video{
      flex-direction: column;
      background-color: #242324;
      border-left: 1px solid #3D3D42;
+     float: right;
  }
+
+ #chat {
+    float: right;
+    /* margin-right: 5px; */
+}
+
 
  .main-header{
      color: #F5F5F5;
@@ -115,4 +124,11 @@ video{
 
  .unmute, .stop{
      color: rgb(212, 23, 23);
+ }
+
+ #name{
+     display: none;
+     height: 300px;
+     width: 500px;
+     
  }
