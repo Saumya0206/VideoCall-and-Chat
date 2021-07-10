@@ -337,7 +337,7 @@ const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
 
 var socketId = '';
-var myStream = '';
+var myStrs = '';
 var screen = '';
 var recordedStream = [];
 var mediaRecorder = '';
@@ -354,8 +354,13 @@ var peer = new Peer(undefined, {
 
 var currentPeer;
 
-const peers = [];
+var peers = [];
 let VideoShownStream;
+
+
+let flag1=0;
+let flag2=0;
+
 
 navigator.mediaDevices.getUserMedia({
     video: true,
@@ -371,7 +376,6 @@ navigator.mediaDevices.getUserMedia({
             VideoStream(video, userVideoStream)
             // currentPeer = call.peerConnection
         })
-
     })
 
 
@@ -399,7 +403,6 @@ navigator.mediaDevices.getUserMedia({
         $('ul').append(`<li class="message"><b>Participant</b><br/>${message}</li>`);
         scrollToBottom()
     })
-
 })
 
 peer.on('open', id => {
@@ -532,6 +535,33 @@ function animateDiv() {
 }
 
 
+$('#join').on('click', function () {
+    change();
+})
+function change(){
+    $("#join").css("display", "none");
+    $(".main-left").css("display", "flex");
+    flag1=0;
+    flag2=0;
+    // mediaDevices.play();
+}
+
+
+
+$('.leave_meeting').on('click', function () {
+    change1();
+})
+function change1(){
+    $(".main-left").css("display", "none");
+    $("#join").css("display", "flex");
+    flag1=1;
+    flag2=1;
+    
+
+}
+
+
+
 function shareScreen() {
     shareScreen1().then((stream) => {
         // toggleShareIcons(true);
@@ -558,15 +588,15 @@ function shareScreen() {
 
 function stopSharingScreen() {
     //enable video toggle btn
-    toggleVideoBtnDisabled(false);
+    // toggleVideoBtnDisabled(false);
 
     return new Promise((res, rej) => {
         screen.getTracks().length ? screen.getTracks().forEach(track => track.stop()) : '';
 
         res();
     }).then(() => {
-        toggleShareIcons(false);
-        broadcastNewTracks(myStream, 'video');
+        // toggleShareIcons(false);
+        broadcastNewTracks(VideoShown, 'video');
     }).catch((e) => {
         console.error(e);
     });

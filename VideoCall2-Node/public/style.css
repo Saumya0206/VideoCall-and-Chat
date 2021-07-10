@@ -24,12 +24,29 @@ video{
 }
 
 .main-left{
+    display: none;
     flex: 0.8;
-    display: flex;
     flex-direction: column;
 
 }
-
+#join{
+    font-size: 30px;
+    color: green;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex: 0.8;
+}
+.join-meet{
+    cursor: pointer;
+    padding: 10px;
+}
+.join-meet:hover{
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(37, 36, 36);
+    border-radius: 3px;
+}
 .main-right{
     flex: 0.2;
 }
@@ -54,6 +71,7 @@ video{
 
 .main-controls-block{
     display: flex;
+    align-items: center;
 }
 
  .main-controls-button{
@@ -64,16 +82,34 @@ video{
      padding: 8px 10px;
      min-width: 80px;
      cursor: pointer;
- }
-
- .main-controls-button:hover{
-     background-color: rgb(59, 59, 59);
-     border-radius: 5px;
- }
-
- .main-controls-button i{
-     font-size: 24px;
- }
+    }
+    
+    .main-controls-button:hover{
+        background-color: rgb(59, 59, 59);
+        border-radius: 5px;
+    }
+    
+    .main-controls-button i{
+        font-size: 24px;
+    }
+    .btn{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+        min-width: 80px;
+        cursor: pointer;
+        color: rgb(219, 215, 215);
+        /* background-color: rgb(59, 59, 59);
+        border-radius: 5px; */
+    }
+    .btn:hover{
+        color: rgb(219, 215, 215);
+        background-color: rgb(59, 59, 59);
+        border-radius: 5px;
+    }
 
  .leave_meeting{
     color: rgb(238, 62, 62);

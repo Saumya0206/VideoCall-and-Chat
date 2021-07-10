@@ -39,12 +39,12 @@ io.on('connection', socket => {
         })
     })
 
-    socket.on('offer', (data) => {
-        socket.broadcast.emit('offer', data);
+    socket.on('screen-share', (data) => {
+        socket.broadcast.emit('screen-share', data);
     });
 
-    socket.on('initiate', () => {
-        io.emit('initiate');
+    socket.on('screen-share', () => {
+        io.emit('screen-share');
     });
 })
 
