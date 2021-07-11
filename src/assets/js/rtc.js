@@ -276,7 +276,25 @@ window.addEventListener( 'load', () => {
             document.querySelector('.main-mute-button').innerHTML = html;
         }
 
-
+// document.getElementById("screenShare").addEventListener('click', (e) => {
+//     navigator.mediaDevices.getDisplayMedia({
+//         video: {
+//             cursor: "always"
+//         },
+//         audio: {
+//             echoCancellation: true,
+//             noiseSuppression: true
+//         }
+//     }).then((stream) => {
+//         let videoTrack = stream.getVideoTracks()[0];
+//         let sender = currentPeer.getSender().find(function(s) {
+//             return s.track.kind == videoTrack.kind
+//         })
+//         sender.replaceTrack(videoTrack)
+//     }).catch((err) => {
+//         console.log("unable to get display media" + err);
+//     })
+// })
         function shareScreen() {
             h.shareScreen().then( ( stream ) => {
                 h.toggleShareIcons( true );
@@ -541,3 +559,24 @@ window.addEventListener( 'load', () => {
         } );
     }
 } );
+
+
+
+$('#join').on('click', function () {
+    change();
+})
+
+function change() {
+    $("#join").css("display", "none");
+    $(".main-left").css("display", "flex");
+}
+
+
+$('#leave_meet').on('click', function () {
+    change1();
+})
+
+function change1() {
+    $(".main-left").css("display", "none");
+    $("#join").css("display", "flex");
+}
