@@ -1,6 +1,6 @@
 {
   "name": "msteams-clone",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A conference call implementation using WebRTC, Socket.io and Node.js.",
   "main": "src/app.js",
   "dependencies": {
@@ -14,7 +14,7 @@
     "webpack": "^5.44.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.12"
   },
   "scripts": {
     "watch": "nodemon --watch \"src/\" --exec \"node src/app.js\"",
