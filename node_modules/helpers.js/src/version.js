@@ -1,0 +1,1 @@
+module.exports = {"full":"1.0.0","major":"1","minor":"0","dot":"0","author":"danjford <github.com/danjford>"}
