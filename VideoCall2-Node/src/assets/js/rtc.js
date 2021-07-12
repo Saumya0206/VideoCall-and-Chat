@@ -562,21 +562,21 @@ window.addEventListener( 'load', () => {
 
 
 
-$('#join').on('click', function () {
-    change();
-})
+// $('#join').on('click', function () {
+//     change();
+// })
 
-function change() {
-    $("#join").css("display", "none");
-    $(".main-left").css("display", "flex");
-}
+// function change() {
+//     $("#join").css("display", "none");
+//     $(".main-left").css("display", "flex");
+// }
 
 
-$('#leave_meet').on('click', function () {
-    change1();
-})
+// $('#leave_meet').on('click', function () {
+//     change1();
+// })
 
-function change1() {
-    $(".main-left").css("display", "none");
-    $("#join").css("display", "flex");
-}
+// function change1() {
+//     $(".main-left").css("display", "none");
+//     $("#join").css("display", "flex");
+// }
