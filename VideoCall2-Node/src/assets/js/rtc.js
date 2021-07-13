@@ -1,6 +1,6 @@
 
 import h from './helpers.js';
-
+// create the room and take the user to the already created room
 window.addEventListener( 'load', () => {
     const room = h.getQString( location.href, 'room' );
     const username = sessionStorage.getItem( 'username' );
@@ -115,7 +115,7 @@ window.addEventListener( 'load', () => {
             } );
         }
 
-
+// adding chat feature
         function sendMsg( msg ) {
             let data = {
                 room: room,
@@ -184,7 +184,7 @@ window.addEventListener( 'load', () => {
 
 
 
-            //add
+            //add other's video 
             pc[partnerName].ontrack = ( e ) => {
                 let str = e.streams[0];
                 if ( document.getElementById( `${ partnerName }-video` ) ) {
