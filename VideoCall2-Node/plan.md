@@ -9,11 +9,15 @@ add stylimng - done
 add mute button- done
 add stop video- done
 leave meeting - done
+deployed - done
 add share screen - done
 add the ability to create messages - done
+deployed- done
 add raise hand
 add record video - done
 add chat room before after call
 participants list 
+deployed- done
 add record stream - done
 styling - done
+deployed - done
