@@ -25,6 +25,7 @@ It is a platform where two or more people can be connected to each other via vid
 * Chat 
 * Screen-share
 * Record video & stream
+* Join & Leave room
 
 # What's in the code ? 💻
 This code consists of three parts :
