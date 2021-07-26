@@ -1,11 +1,10 @@
 # VideoCall-and-Chat
 
-This repository contains the code for the Video-Call-Web-App developed by : Soumya Vaish under the Microsoft Mentorship Program, 2021. 
+This repository contains the code for the Video-Call-Web-App developed by : [Soumya Vaish](https://github.com/Saumya0206) under the Microsoft Mentorship Program, 2021. 
 
-This project was developed following the Agile Methodology . The Kanban Board in project section contains the status cards for the different tasks which will be performed in iterative phases.
+This project was developed following the Agile Methodology. And there were changes in every step which is a positive point of Agile Methodology. The work was divided into different sprints and henceforth, helped in the continuation of the project. 
 
-# Wireframes and use cases
-# Description: ✌
+# Description ✌
 This is a video calling web application which one can use on their browser. Can also work on mobile phones.
 It is a platform where two or more people can be connected to each other via video call and can also chat among themselves. Various other features such as mute/unmute, video on/off, screen-share, record the stream and the video is also added additionally. When the call is done, people can leave the room. 
 
@@ -19,7 +18,6 @@ It is a platform where two or more people can be connected to each other via vid
 
 # Development Tools used 🛠
 * VS Code
-* Accessibility Extension
 * Figma ( for wireframes )
 
 # Features 📃
