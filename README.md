@@ -32,4 +32,9 @@ This code consists of three parts :
 * Join the already existing video call
 * Video Call where many people can be connected
 
+# How to use the website ? 😵
+Link to demo : [Demo](https://drive.google.com/file/d/1zHBi8jW7hL5x30-UVGs_B7JMh_9bUT09/view)
 
+# Website link 🖇
+Link : [Video Call Web-App](https://lit-coast-97694.herokuapp.com/)
+This website has been deployed using heroku
