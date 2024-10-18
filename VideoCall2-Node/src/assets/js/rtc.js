@@ -24,6 +24,7 @@ window.addEventListener( 'load', () => {
 
         var pc = [];
 
+
         let socket = io( '/stream' );
 
         var socketId = '';
