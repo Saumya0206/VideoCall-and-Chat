@@ -6,6 +6,8 @@ window.addEventListener( 'load', () => {
         let chatElem = document.querySelector( '#chat-pane' );
         let mainSecElem = document.querySelector( '#main-section' );
 
+
+
         if ( chatElem.classList.contains( 'chat-opened' ) ) {
             chatElem.setAttribute( 'hidden', true );
             mainSecElem.classList.remove( 'col-md-9' );
