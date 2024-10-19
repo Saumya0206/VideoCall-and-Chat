@@ -13,6 +13,7 @@ window.addEventListener( 'load', () => {
             chatElem.classList.remove( 'chat-opened' );
         }
 
+
         else {
             chatElem.attributes.removeNamedItem( 'hidden' );
             mainSecElem.classList.remove( 'col-md-12' );

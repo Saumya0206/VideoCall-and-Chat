@@ -5,6 +5,7 @@ body{
 .navbar{
     background-color: blueviolet;
 }
+
 .chat-col{
     right: -100vw;
     bottom: 0;
