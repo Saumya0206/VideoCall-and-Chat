@@ -20,6 +20,7 @@ window.addEventListener( 'load', () => {
             commElem[i].attributes.removeNamedItem( 'hidden' );
         }
 
+
         var pc = [];
 
         let socket = io( '/stream' );

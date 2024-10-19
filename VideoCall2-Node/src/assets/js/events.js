@@ -1,6 +1,7 @@
 import helpers from './helpers.js';
 
 window.addEventListener( 'load', () => {
+
     //When the chat icon is clicked
     document.querySelector( '#toggle-chat-pane' ).addEventListener( 'click', ( e ) => {
         let chatElem = document.querySelector( '#chat-pane' );
