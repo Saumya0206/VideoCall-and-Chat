@@ -5,6 +5,8 @@ window.addEventListener( 'load', () => {
     const room = h.getQString( location.href, 'room' );
     const username = sessionStorage.getItem( 'username' );
 
+
+
     if ( !room ) {
         document.querySelector( '#room-create' ).attributes.removeNamedItem( 'hidden' );
     }
@@ -21,6 +23,7 @@ window.addEventListener( 'load', () => {
         }
 
         var pc = [];
+
 
         let socket = io( '/stream' );
 

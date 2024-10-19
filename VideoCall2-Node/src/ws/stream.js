@@ -12,6 +12,7 @@ const stream = ( socket ) => {
 
 
 
+
     socket.on( 'newUserStart', ( data ) => {
         socket.to( data.to ).emit( 'newUserStart', { sender: data.sender } );
     } );
@@ -23,6 +24,8 @@ const stream = ( socket ) => {
     } );
 
 
+
+
     socket.on( 'ice candidates', ( data ) => {
         socket.to( data.to ).emit( 'ice candidates', { candidate: data.candidate, sender: data.sender } );
     } );
@@ -31,6 +34,8 @@ const stream = ( socket ) => {
     socket.on( 'chat', ( data ) => {
         socket.to( data.room ).emit( 'chat', { sender: data.sender, msg: data.msg } );
     } );
+
+
 };
 
 module.exports = stream;
