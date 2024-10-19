@@ -27,6 +27,7 @@ window.addEventListener( 'load', () => {
 
         let socket = io( '/stream' );
 
+
         var socketId = '';
         var myStream = '';
         var screen = '';
@@ -35,6 +36,7 @@ window.addEventListener( 'load', () => {
 
         //Get user video by default
         getAndSetUserStream();
+
 
 
         socket.on( 'connect', () => {
