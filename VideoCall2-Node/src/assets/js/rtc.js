@@ -34,6 +34,7 @@ window.addEventListener( 'load', () => {
         getAndSetUserStream();
 
 
+
         socket.on( 'connect', () => {
             //set socketId
             socketId = socket.io.engine.id;

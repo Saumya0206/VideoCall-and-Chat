@@ -16,6 +16,7 @@ const stream = ( socket ) => {
     } );
 
 
+
     socket.on( 'sdp', ( data ) => {
         socket.to( data.to ).emit( 'sdp', { description: data.description, sender: data.sender } );
     } );
