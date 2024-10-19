@@ -21,6 +21,7 @@ body{
     min-height: 100vh;
 }
 
+
 .chat-col.chat-opened {
     right: 0;
     overflow-y: auto;
